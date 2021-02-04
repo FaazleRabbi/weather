@@ -34,6 +34,9 @@
             <h3><span id="temp">38.06</span>&deg;C</h3>
             <h1 id="lead" class="lead">Clouds</h1>
         </div>
+        <div class="credit text-center pt-2 bg-dark text-light fixed-bottom ">
+            <p>Developed by <a href="http://facebook.com/fazle92">Fazle Rabbi</a></p>
+        </div>
     </div>
     <script>
         //immediate out put section when page is loaded
@@ -44,7 +47,6 @@
         const cityName = document.getElementById('input').value;
         weather(cityName) ;
       })
-
       //weather function
       function weather(cityName) {
         fetch('http://api.openweathermap.org/data/2.5/weather?q='+cityName + '&appid=524636af7dec24e6aeb0f15643d839c1')
